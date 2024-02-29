@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for ver in 3.7; do
+    which python$ver > /dev/null 2>&1 && \
+    ( python$ver    test/compile_tests
+      python$ver -O test/compile_tests
+    )
+done

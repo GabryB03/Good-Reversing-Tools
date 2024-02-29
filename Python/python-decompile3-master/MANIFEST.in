@@ -1,0 +1,18 @@
+include README.rst
+include ChangeLog
+include HISTORY.md
+include HOW-TO-REPORT-A-BUG.md
+include COPYING
+include Makefile
+include requirements.txt
+include requirements-dev.txt
+include DECOMPYLE-2.4-CHANGELOG.txt
+include __pkginfo__.py
+recursive-include decompyle3 *.py
+include bin/decompyle3
+include bin/py3disassemble
+include pytest/Makefile
+include test/Makefile
+recursive-include test *.py *.pyc
+recursive-include pytest *.py
+recursive-include pytest/testdata *
